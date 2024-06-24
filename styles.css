@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.header {
+  background-color: #495057; /* Color más claro que el anterior */
+  color: white;
+  padding: 100px 0;
+}
+.header h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+#comidasContainer .comida {
+  border: 1px solid #ddd;
+  background-color: #f8f9fa; /* Fondo gris claro */
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#comidasContainer .comida .details {
+  flex: 1;
+}
+#comidasContainer .comida .actions {
+  display: flex;
+  align-items: center;
+}
+#comidasContainer .comida .btn {
+  margin-left: 5px;
+}
+#deleteAll {
+  display: inline-block;
+}
+.footer {
+  margin-top: 20px;
+  background-color: #343a40;
+}
+.footer p {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .form-group, .btn-block {
+    width: 100%;
+    margin: 5px 0;
+  }
+  #comidasContainer .comida {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #comidasContainer .comida .details,
+  #comidasContainer .comida .actions {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
